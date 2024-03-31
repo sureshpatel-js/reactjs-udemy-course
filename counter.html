@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>counter</title>
+</head>
+
+<body>
+    <div style="display: flex;">
+        <button onclick="" id="btn1">-1</button>
+        <div id="display"></div>
+        <button id="btn2">+1</button>
+    </div>
+    <script>
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var display = document.getElementById("display");
+
+        var count = 0;
+
+        display.innerText = count;
+        btn1.addEventListener("click", function () {
+            count--;
+            console.log(count);
+            display.innerText = count;
+        });
+        
+        btn2.addEventListener("click", function () {
+            count++;
+            console.log(count);
+            display.innerText = count;
+        });
+    </script>
+</body>
+
+</html>
